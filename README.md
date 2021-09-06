@@ -11,13 +11,13 @@ This analysis consists of using big data tools to answer questions about dataset
 
 ## Features
 
-Process the downloaded data analyze the datasets.
+- Process the downloaded data analyze the datasets.
 
-Find, organize, and format pageviews on any given day.
+- Find, organize, and format pageviews on any given day.
 
-Follow clickstreams to find relative frequencies of different pages.
+- Follow clickstreams to find relative frequencies of different pages.
 
-Find the different way to analyze the most internal search link fraction of hotel california.
+- Find the different way to analyze the most internal search link fraction of hotel california.
 
 ## Getting Started
 Most of the code was done using HQL in a Hive GUI interface via Data Analysis studio
