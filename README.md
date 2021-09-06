@@ -45,5 +45,14 @@ The HQL commands can be used on similar large datasets, specifically those found
 
 This script was designed to answer all sorts of questions pertaining to big data.
 
+## Contributors
+Here list the people who have contributed to this project.
+
+- Hemanth Soma
+- Suresh Mallakunta
+- Aditya Kumar P
+- Vaibhavkanth Mishra
+- Rohit Rawath
+
 ## Reference
 https://github.com/samye760/Wikipedia-Big-Data-Analysis
