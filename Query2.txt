@@ -5,8 +5,6 @@ LOAD DATA INPATH '/user/raj_ops/DataEng2/pageviews-20210401-000000' INTO TABLE a
  CREATE TABLE IF NOT EXISTS a_en_pageviews (page STRING,views INT) PARTITIONED BY (lang STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t';
 ================
 INSERT INTO TABLE a_en_pageviews PARTITION (lang = 'en') SELECT page, views FROM april_pageviews WHERE (lang = 'en');
-====================
-INSERT INTO TABLE a_en_pageviews PARTITION (lang = 'en.m')SELECT page, views FROM april_pageviews WHERE (lang = 'en.m');
 ========================
 CREATE TABLE IF NOT EXISTS total_a_pageviews AS SELECT DISTINCT(page), SUM(views) OVER (PARTITION BY page ORDER BY page) AS total_views FROM a_en_pageviews  WHERE page != 'Main_Page' AND page != 'Special:Search' AND page != '-';
 ======================
